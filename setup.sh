@@ -34,9 +34,9 @@ echo -e "\e[31mPermission Denied!\e[0m";
 exit 0
 fi
 clear
-#if [ -f "/etc/rare/xray/domain" ]; then
-#echo "Script Already Installed"
-#exit 0
+if [ -f "/etc/rare/xray/domain" ]; then
+echo "Script Already Installed"
+exit 0
 fi
 clear
 echo ""
@@ -44,7 +44,7 @@ echo ""
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e " \E[0;100;33m        • AutoScript by ZHOEvpn •            \E[0m"
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[92              ╭━━━━┳╮╱╭┳━━━┳━━━╮"
+echo -e "\e[33m              ╭━━━━┳╮╱╭┳━━━┳━━━╮"
 echo -e "\e[92              ╰━━╮━┃┃╱┃┃╭━╮┃╭━━╯"
 echo -e "\e[92              ╱╱╭╯╭┫╰━╯┃┃╱┃┃╰━━╮╭╮╭┳━━┳━╮"
 echo -e "\e[92              ╱╭╯╭╯┃╭━╮┃┃╱┃┃╭━━╯┃╰╯┃╭╮┃╭╮╮"
@@ -84,8 +84,8 @@ touch /etc/rare/v2ray/clients.txt
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 echo "$host" >> /etc/rare/xray/domain
 echo "$host" >> /root/domain
-echo "LONAK" >> /home/version
-echo "@IanVPN" >> /home/contact
+echo "KUMAHA AING" >> /home/version
+echo "@chalyyzhu" >> /home/contact
 clear
 secs_to_human() {
     echo "Installation time : $(( ${1} / 3600 )) hours $(( (${1} / 60) % 60 )) minute's $(( ${1} % 60 )) seconds"
